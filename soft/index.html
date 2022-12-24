@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Программы | Linux Helper</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-url">
+                <a href="../index.html">главная</a>
+            </div>
+            <div class="header-url">
+                <a href="../linux/index.html">linux</a>
+            </div>
+            <div class="header-url">
+                <a href="../soft/index.html" id="active">программы</a>
+            </div>
+            <div class="header-url">
+                <a href="../terminal/index.html">терминал</a>
+            </div>
+            <div class="header-url">
+                <a href="../usb/index.html">usb</a>
+            </div>
+        </div>
+    </header>
+    
+    <main id="top">
+        <div class="main-content">
+            <div class="main-title">
+                <h1>Браузеры</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Google Chrome</h2>
+            </div>
+            
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/chrome.svg" alt="" class="soft-icon">
+                    <p>
+                        Google Chrome является наиболее часто используемым веб-браузером в Интернете не зря.
+                        С помощью учетной записи Google можно легко синхронизироваться между разными устройствами.
+                        Множество расширений, приложений и плагинов еще больше расширяют его возможности.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</li>
+                    <li>sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Brave</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/brave.svg" alt="" class="soft-icon">
+                    <p>
+                        В качестве альтернативы предлагаю вам рассмотреть браузер - Brave,
+                        который по умолчанию блокирует рекламу и скрипты отслеживания, что обеспечивает более быстрый и безопасный просмотр веб-страниц.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt install curl</li>
+                    <li>sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg</li>
+                    <li>echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list</li>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install brave-browser</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="main-title">
+                <h1>аудио и видео плееры</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Sayonara</h2>
+            </div>
+            
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/sayonara.png" alt="" class="soft-icon">
+                    <p>
+                        Sayonara — это небольшой легкий музыкальный проигрыватель с приятным темным пользовательским интерфейсом.
+                        В нем есть все основные функции, которые можно ожидать от стандартного музыкального плеера.
+                        Он хорошо интегрируется со средой рабочего стола Ubuntu и не занимает вашу оперативную память.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt-add-repository ppa:lucioc/sayonara</li>
+                    <li>sudo apt-get update</li>
+                    <li>sudo apt-get install sayonara</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Audacity</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/audacity.svg" alt="" class="soft-icon">
+                    <p>
+                        Audacity — это в большей степени аудиоредактор, чем аудиоплеер.
+                        Вы можете записывать и редактировать аудио с помощью этого бесплатного инструмента с открытым исходным кодом.
+                        Он доступен для Linux, Windows и macOS. Вы можете установить его из Центра программного обеспечения.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install audacity</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>MusicBrainz Picard</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/musicbrainz-picard.svg" alt="" class="soft-icon">
+                    <p>
+                        Picard — это не музыкальный проигрыватель, это музыкальный теггер.
+                        Если у вас есть множество локальных музыкальных файлов, Picard позволяет автоматически обновлять их,
+                        добавляя в них правильную информацию о треке, исполнителе и альбоме.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt-get install picard</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>VLC</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/vlc.svg" alt="" class="soft-icon">
+                    <p>
+                        Бесплатное приложение с открытым исходным кодом, VLC — король видеоплееров.
+                        Он поддерживает практически все возможные медиакодеки, позволяет увеличивать громкость до 200% и умеет продолжать воспроизведение с последней известной позиции.
+                        В интернете в изобилии существуют целые списки уловок и трюков для VLC, которые вы можете использовать, чтобы выжать из него максимум.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo add-apt-repository ppa:videolan/stable-daily</li>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install vlc</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>MPV</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/mpv.svg" alt="" class="soft-icon">
+                    <p>
+                        MPV — это видеоплеер, заслуживающий большего внимания.
+                        Изящный минималистичный графический интерфейс и множество функций, MPV умеет все,
+                        что должен уметь качественный видеоплеер в представлении самого дотошного пользователя.
+                        Вы даже сможете использовать его в командной строке.
+                        Если вас не устраивает VLC, вам обязательно стоит попробовать MPV.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install mpv</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-title">
+                <h2>Работа с графикой</h2>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>GIMP</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/gimp.svg" alt="" class="soft-icon">
+                    <p>
+                        GIMP — это бесплатный редактор изображений с открытым исходным кодом, доступный для Linux, Windows и macOS.
+                        Это лучшая альтернатива Adobe Photoshop в Linux на данный момент.
+                        Вы можете использовать его для всех видов редактирования изображений, а в интернете доступно множество ресурсов, которые помогут вам с GIMP.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt -y install gimp</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Inkscape</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/Inkscape.svg" alt="" class="soft-icon">
+                    <p>
+                        Так же, как и Gimp, Inkscape является бесплатным редактором изображений с открытым исходным кодом, специально ориентированным на векторную графику.
+                        С его помощью вы сможете создать векторную графику и логотипы.
+                        Вы можете сравнить его с Adobe Illustrator для Linux.
+                        И, как и Gimp, Inkscape также имеет множество обучающих программ, доступных в Интернете.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install inkscape</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-title">
+                <h1>Редакторы фото и видео</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>digiKam</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/digiKam.svg" alt="" class="soft-icon">
+                    <p>
+                        С помощью приложения с открытым исходным кодом digiKam вы можете профессионально обрабатывать изображения с высококачественной камеры.
+                        digiKam предоставляет все инструменты, необходимые для просмотра, управления, редактирования, улучшения, систематизации, добавления тегов и обмена фотографиями.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install digikam</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Darktable</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/darktable.svg" alt="" class="soft-icon">
+                    <p>
+                        Darktable — это приложение для обработки фотографий с открытым исходным кодом, в котором особое внимание уделяется обработке изображений в формате raw.
+                        Это лучшая альтернатива Adobe Lightroom.
+                        Оно также доступен для Windows и macOS.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo add-apt-repository ppa:pmjdebruijn/darktable-release</li>
+                    <li>sudo apt-get update</li>
+                    <li>sudo apt-get install darktable</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Kdenlive</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/kdenlive.svg" alt="" class="soft-icon">
+                    <p>
+                        Kdenlive — лучший универсальный видеоредактор для Linux.
+                        У него достаточно функций, которые можно сравнить с iMovie или Movie Maker.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install kdenlive</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Shotcut</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/shotcut.png" alt="" class="soft-icon">
+                    <p>
+                        Shotcut — еще один отличный видеоредактор с открытым исходным кодом и всеми необходимыми функциями,
+                        которые вы только можете ожидать от стандартного видеоредактора.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo snap install --classic shotcut</li>
+                    <li>systemctl start snapd.seeded.service</li>
+                    <li>sudo snap install --classic shotcut</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-title">
+                <h1>Пакеты офиса</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>LibreOffice</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/libreoffice.svg" alt="" class="soft-icon">
+                    <p>
+                        LibreOffice предустановлен на Ubuntu и, несомненно, является лучшим офисным программным обеспечением с открытым исходным кодом.
+                        Это полный пакет, включающий редактор документов, инструмент для работы с электронными таблицами, программное обеспечение для презентаций, математический инструмент и графический инструмент.
+                        И даже некоторые PDF файлы вы с помощью LibreOffice сможете отредактировать.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo add-apt-repository ppa:libreoffice/ppa</li>
+                    <li> sudo apt update</li>
+                    <li>sudo apt install libreoffice libreoffice-gnome</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>WPS Office</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/wps-office.png" alt="" class="soft-icon">
+                    <p>
+                        WPS Office приобрел популярность как клон Microsoft Office.
+                        Он имеет интерфейс, идентичный Microsoft Office, и утверждается, что он более совместим с MS Office.
+                        Если вы ищете что-то похожее на Microsoft Office, WPS Office - хороший выбор.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo snap install wps-office</li>
+                    <li>sudo snap install wps-office-multilang</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="main-title">
+                <h1>Редакторы кода</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Atom</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/atom.svg" alt="" class="soft-icon">
+                    <p>
+                        Atom — это бесплатный редактор кода с открытым исходным кодом от GitHub.
+                        Еще до того, как была выпущена первая стабильная версия, он стал фаворитом среди программистов из-за своего пользовательского интерфейса,
+                        функций и огромного количества плагинов.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo snap install atom</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Visual Studio Code</h2>
+            </div>
+
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/vscode.svg" alt="" class="soft-icon">
+                    <p>
+                        VS Code — это редактор с открытым исходным кодом от Microsoft.
+                        Не беспокойтесь о сомнительной репутации Microsoft, VS Code — отличный редактор для веб-разработки, поддерживающий также ряд других языков программирования.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install software-properties-common apt-transport-https wget</li>
+                    <li>wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -</li>
+                    <li>sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"</li>
+                    <li>sudo apt install code</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-title">
+                <h1>PDF</h1>
+            </div>
+        </div>
+
+        <div class="main-content" id="block">
+            <div class="main-title">
+                <h2>Okular</h2>
+            </div>
+            
+            <div class="main-text">
+                <div class="soft-tile">
+                    <img src="../images/soft/okular.svg" alt="" class="soft-icon">
+                    <p>
+                        Okular — это в основном программа для просмотра PDF-файлов с возможностью их дальнейшего редактирования.
+                        Вы можете выполнять базовое редактирование PDF-файлов в Linux с помощью Okular, например добавлять всплывающие заметки,
+                        встроенные заметки, от руки рисовать линии, расставлять маркеры и штампы, ну и всякое такое.
+                    </p>
+                </div>
+                <h4>Установка через терминал</h4>
+                <ol>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install okular</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>
+                    &copy; Нефёдов Алексей &emsp; ИД31-20 &emsp; 2022-2023
+                </p>
+            </div>
+            
+            <div class="footer-social">
+                <div class="footer-social-item">
+                    <a href="https:/vk.com/diasvixub" target="_blank"><img src="../images/vk.svg" title="VK" class="social"></a>
+                </div>
+                
+                <div class="footer-social-item">
+                    <a href="https:/t.me/diaslol" target="_blank"><img src="../images/telegram.svg" title="TELEGRAM" class="social"></a>
+                </div>
+            </div>
+            <a href="#top">Наверх</a>
+        </div>
+    </footer>
+</body>
+</html>
