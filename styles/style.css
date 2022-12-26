@@ -47,6 +47,7 @@ body {
 header, footer, main {
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .header-content, .main-content, .footer-content {
@@ -57,6 +58,30 @@ header, footer, main {
     margin: auto;
     padding: 0 1rem;
     align-items: center;
+}
+
+.main-text {
+    padding-bottom: .1rem;
+}
+
+.main-text > a {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+}    
+
+.main-text > ol {
+    display: block;
+    padding: 1rem 10px;
+    margin-left: 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: left;
+}    
+
+.main-content {
+    display: block;
+    border-radius: 25px;
 }
 
 header {
@@ -87,7 +112,7 @@ b {
 }
 
 ul, ol {
-    margin: .8rem 0;
+    margin: .5rem 0;
 }
 
 li {
@@ -132,29 +157,6 @@ a:hover {
     color: #00d084;
 }
 
-.main-text {
-    padding-bottom: .1rem;
-}
-
-.main-text > a {
-    display: block;
-    text-align: center;
-    font-weight: 400;
-}    
-
-.main-text > ol {
-    display: block;
-    padding: 1rem 10px;
-    margin-left: 1.5rem;
-    border-radius: 10px;
-    font-weight: 500;
-    text-align: left;
-}    
-
-.main-content {
-    display: block;
-    border-radius: 25px;
-}
 
 #block {
     background-color: #DFDFDF;
@@ -169,6 +171,7 @@ a:hover {
 
 .soft-tile > p {
     width: 90%;
+    margin: 0 10px;
 }
 
 .footer-social {
@@ -193,6 +196,7 @@ a:hover {
 img {
     display: block;
     margin: auto;
+    border: 2px solid #474A51;
 }
 
 .social {
@@ -206,27 +210,27 @@ img {
 
 .preview {
     width: 90%;
-    border-radius: 10px;
     margin: 1rem auto;
     transition: 1s ease;
-    border: 2px solid #474A51;
     z-index: 1;
+    border-radius: 10px;
+}
+
+.preview-usb {
+    width: 80%;
+    margin: 1rem auto;
+    transition: 1s ease;
+    border-radius: 10px;
 }
 
 .preview:hover {
     transform: scale(1.5);
 }
 
-#rufus {
-    width: 50%;
-    border-radius: 10px;
-    margin: 1rem auto;
-    border: 2px solid #474A51;
-}
-
 .soft-icon {
     width: 10%;
-    margin-right: 1.5rem;
+    margin: auto;
+    border: none;
 }
 
 .terminal {
@@ -236,4 +240,114 @@ img {
 #active {
     color: #00d084;
     font-weight: 500;
+}
+
+@media (max-width:425px) {
+    html {
+        font-size: 10px;
+    }
+    
+    main {
+        padding: 3rem 0 0 0;
+    }
+    
+    .header-content, .main-content, .footer-content {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .main-content {
+        border-radius: 0;
+    }
+    
+    .header-url {
+        width: 100px;
+        padding: .5rem 0;
+    }
+
+    .header-url > a {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    tt {
+        padding: .2rem .5rem;
+        border-radius: .5rem;
+        margin: 1rem 0 1rem 1rem;
+        font-weight: 500;
+    }
+    
+    .preview {
+        border-radius: .5rem;
+    }
+    
+    .preview-usb {
+        margin: 0 auto;
+        border-radius: .5rem;
+    }
+    
+    #rufus {
+        width: 50%;
+        border-radius: .5rem;
+        margin: 1rem auto;
+        border: 2px solid #474A51;
+    }
+    
+    .footer-copyright > p {
+        font-size: 1rem;
+    }
+    
+    .footer-social {
+        width: 80px;
+        margin: .8rem 0;
+    }
+    
+    .social {
+        width: 16px;
+    }
+    
+    .soft-tile {
+        margin: 0 0 1rem 0;
+    }
+    
+    .soft-tile > p {
+        width: 80%;
+        margin: 0 10px 0 0;
+    }
+    
+    .soft-icon {
+        width: 10%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
+
+    h3 {
+        font-size: .7rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    
+    .main-text > ol {
+        padding: 0 1.5rem;
+        margin-left: 1.5rem;
+    }   
+    
+    .screen {
+        flex-direction: column;
+    }
+    .preview:hover {
+        transform: none;
+    }
 }
