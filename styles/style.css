@@ -82,6 +82,7 @@ header, footer, main {
 .main-content {
     display: block;
     border-radius: 25px;
+    background-color: #ebeff1;
 }
 
 header {
@@ -242,6 +243,114 @@ img {
     font-weight: 500;
 }
 
+@media (max-width: 1080px) {
+    html {
+        font-size: 13px;
+    }
+    
+    main {
+        padding: 3rem 0 0 0;
+    }
+    
+    .header-content, .main-content, .footer-content {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .main-content {
+        border-radius: 0;
+    }
+    
+    .header-url {
+        width: 100px;
+        padding: .5rem 0;
+    }
+
+    .header-url > a {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    tt {
+        padding: .1rem .5rem;
+        border-radius: .5rem;
+        margin: 1rem 0 1rem .8rem;
+        font-weight: 500;
+    }
+    
+    .preview {
+        border-radius: .5rem;
+    }
+    
+    .preview-usb {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: .5rem;
+    }
+    
+    #rufus {
+        width: 30%;
+        border-radius: .5rem;
+        margin: 1rem auto;
+        border: 2px solid #474A51;
+    }
+    
+    .footer-copyright > p {
+        font-size: 1rem;
+    }
+    
+    .footer-social {
+        width: 80px;
+        margin: .8rem 0;
+    }
+    
+    .social {
+        width: 16px;
+    }
+    
+    .soft-tile {
+        margin: 0 0 1rem 0;
+    }
+    
+    .soft-tile > p {
+        width: 90%;
+        margin: 0 10px 0 0;
+    }
+    
+    .soft-icon {
+        width: 7%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
+
+    h3 {
+        font-size: .7rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    
+    .main-text > ol {
+        padding: 0 1.5rem;
+        margin-left: 1.5rem;
+    }   
+    
+    .preview:hover {
+        transform: none;
+    }
+}
+
 @media (max-width:425px) {
     html {
         font-size: 10px;
@@ -272,7 +381,7 @@ img {
     }
     
     tt {
-        padding: .2rem .5rem;
+        padding: .1rem .5rem;
         border-radius: .5rem;
         margin: 1rem 0 1rem 1rem;
         font-weight: 500;
@@ -285,6 +394,7 @@ img {
     .preview-usb {
         margin: 0 auto;
         border-radius: .5rem;
+        width: 90%;
     }
     
     #rufus {
@@ -347,6 +457,7 @@ img {
     .screen {
         flex-direction: column;
     }
+    
     .preview:hover {
         transform: none;
     }
