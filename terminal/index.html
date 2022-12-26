@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
@@ -166,7 +166,7 @@
                     Синтаксис команды простой: mkdir создает директорию, dir задает начальное имя для каждой новой директории, числа в фигурных скобках {00..42} указывают переменную часть имени создаваемых папок.
                     То есть, команда <b>mkdir test_folder_{0..4}</b> создала бы нам 5 папок с начальным именем test_folder_0. 
                 </p>
-                <b>Как создать файл?</b>
+                <p><b>Как создать файл?</b></p>
                 <p>
                     Замечательно, теперь создадим по 43 файла в каждой. Для создания файла существует более 10 разных способов, самый простой:
                 </p>
@@ -236,9 +236,8 @@
                     Для этого используется опция <b>—v[erbose]</b>, покажем на примере.
                     Переместим все содержимое папки <b>dir19</b> в папку <b>dir17</b> командой mv, оставив папку <b>dir19</b> пустой:
                 </p>
-                <tt>mv -v dir19/* dir17/</tt>
-                <p></p>
-                <b>Глубина вложенности</b>
+                <tt>mv -v dir19/* dir17/</tt>    
+                <p><b>Глубина вложенности</b></p>
                 <p>
                     Можно пойти дальше — создать папку с большой вложенностью <b>dir18</b> и переместить только файлы первого уровня в папку <b>dir19</b>:
                 </p>
